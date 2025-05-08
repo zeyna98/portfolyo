@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeynep Gürsoy | Portfolyo</title>
+  <style>
+    :root {
+      --mor: #7b2cbf;
+      --lacivert: #240046;
+      --açık-mor: #9d4edd;
+      --beyaz: #ffffff;
+      --gri: #f3f3f3;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--gri);
+      color: var(--lacivert);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(45deg, var(--mor), var(--lacivert));
+      color: var(--beyaz);
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      animation: fadeIn 1s ease;
+    }
+
+    h2 {
+      color: var(--mor);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--açık-mor);
+      display: inline-block;
+    }
+
+    .card {
+      background: var(--beyaz);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--açık-mor);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      text-align: center;
+      background-color: var(--lacivert);
+      color: var(--beyaz);
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Zeynep Gürsoy</h1>
+    <p>Bilgisayar Mühendisliği Öğrencisi | Web Geliştirici Adayı</p>
+  </header>
+
+  <section id="about">
+    <h2>Hakkımda</h2>
+    <div class="card">
+      <p>Merhaba! Ben Zeynep Gürsoy. Web geliştirme, tasarım ve teknolojiye büyük ilgi duyuyorum. Bu site, projelerimi ve becerilerimi paylaşmak için oluşturuldu.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projelerim</h2>
+    <div class="card">
+      <h3>Proje 1: Kütüphane Yönetim Sistemi</h3>
+      <p>Basit bir HTML/CSS ve JavaScript tabanlı uygulama. Öğrencilerin kitap ödünç almasını kolaylaştırır.</p>
+    </div>
+    <div class="card">
+      <h3>Proje 2: Kişisel Blog Tasarımı</h3>
+      <p>Responsive blog arayüzü, sade mor tonlarında modern bir tasarım ile hazırlandı.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>İletişim</h2>
+    <div class="card">
+      <p>Bana ulaşmak için e-posta: <a href="mailto:zeynep@example.com">zeynep@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/zeynepgursoy" target="_blank">github.com/zeynepgursoy</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zeynep Gürsoy. Tüm hakları saklıdır.</p>
+  </footer>
+
+</body>
+</html>
